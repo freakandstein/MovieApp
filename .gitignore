@@ -1,0 +1,5 @@
+/Pods
+/Podfile.lock
+/pod.save
+.idea
+.DS_Store
