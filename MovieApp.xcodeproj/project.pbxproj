@@ -30,7 +30,7 @@
 		8737426C87D00EB7E8B4B8A2 /* BaseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
 		873743727128347B788858F6 /* SupportXt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportXt.swift; sourceTree = "<group>"; };
 		8737478419251DC3361DDD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		873747D9A98292BA9F34F903 /* iOS Base Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Base Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		873747D9A98292BA9F34F903 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873748038D7A50653738CA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87374AC8E1432385117D9CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87374AEF69573AE2A396062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		873740CA601D4DD98E0705A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				873747D9A98292BA9F34F903 /* iOS Base Project.app */,
+				873747D9A98292BA9F34F903 /* MovieApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +69,7 @@
 			path = base;
 			sourceTree = "<group>";
 		};
-		87374A47DFF20B61D9630461 /* iOS Base Project */ = {
+		87374A47DFF20B61D9630461 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
 				8737433A56A4B27C74E9F6DD /* base */,
@@ -81,14 +81,14 @@
 				8DE6ECB32008985700611D5C /* util */,
 				8DE6ECB52008987400611D5C /* widget */,
 			);
-			path = "iOS Base Project";
+			path = MovieApp;
 			sourceTree = "<group>";
 		};
 		87374DB31AE6D3C4B1EE90B8 = {
 			isa = PBXGroup;
 			children = (
 				873740CA601D4DD98E0705A2 /* Products */,
-				87374A47DFF20B61D9630461 /* iOS Base Project */,
+				87374A47DFF20B61D9630461 /* MovieApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87374E43E0520268D25652F5 /* iOS Base Project */ = {
+		87374E43E0520268D25652F5 /* MovieApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 873749375A98ABF0FFBD0E8E /* Build configuration list for PBXNativeTarget "iOS Base Project" */;
+			buildConfigurationList = 873749375A98ABF0FFBD0E8E /* Build configuration list for PBXNativeTarget "MovieApp" */;
 			buildPhases = (
 				873745AEA81B2F1D58EEEBBA /* Sources */,
 				873742EFE6FE13D881AD260B /* Frameworks */,
@@ -167,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Base Project";
+			name = MovieApp;
 			productName = "iOS Base Project";
-			productReference = 873747D9A98292BA9F34F903 /* iOS Base Project.app */;
+			productReference = 873747D9A98292BA9F34F903 /* MovieApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +180,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Docotel Group";
 			};
-			buildConfigurationList = 873748697613A09F24879E80 /* Build configuration list for PBXProject "iOS Base Project" */;
+			buildConfigurationList = 873748697613A09F24879E80 /* Build configuration list for PBXProject "MovieApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -192,7 +192,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87374E43E0520268D25652F5 /* iOS Base Project */,
+				87374E43E0520268D25652F5 /* MovieApp */,
 			);
 		};
 /* End PBXProject section */
@@ -386,7 +386,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		873748697613A09F24879E80 /* Build configuration list for PBXProject "iOS Base Project" */ = {
+		873748697613A09F24879E80 /* Build configuration list for PBXProject "MovieApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				873742DF295CD030798587EC /* Debug */,
@@ -395,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		873749375A98ABF0FFBD0E8E /* Build configuration list for PBXNativeTarget "iOS Base Project" */ = {
+		873749375A98ABF0FFBD0E8E /* Build configuration list for PBXNativeTarget "MovieApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87374C037FD2D57172F2FA9D /* Debug */,
