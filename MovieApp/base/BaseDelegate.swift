@@ -10,7 +10,6 @@ import Foundation
     @objc optional func taskDidBegin()
     @objc optional func taskDidFinish()
 
-    func taskSessionDidInvalid()
     func taskDidError(message: String)
 }
 

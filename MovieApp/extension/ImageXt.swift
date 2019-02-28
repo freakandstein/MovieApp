@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIImageView {
+    
     func getColorFrom(point: CGPoint) -> UIColor {
         let pixel = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: 4)
         let colorSpace = CGColorSpaceCreateDeviceRGB()
@@ -22,13 +23,14 @@ extension UIImageView {
                                     blue: CGFloat(pixel[2])/255.0,
                                     alpha: CGFloat(pixel[3])/255.0)
         
-        pixel.deallocate(capacity: 4)
+        pixel.deallocate()
         return color
     }
     
 }
 
 extension UIImage {
+    
     func withInsets(insetDimen: CGFloat) -> UIImage {
         return imageWithInset(insets: UIEdgeInsets(top: insetDimen, left: insetDimen, bottom: insetDimen, right: insetDimen))
     }
@@ -45,7 +47,7 @@ extension UIImage {
     }
     
     func base64() -> String{
-        let imageData = UIImagePNGRepresentation(self)!
+        let imageData = self.pngData()!
         let encode = imageData.base64EncodedString(options: .lineLength64Characters)
         return encode
     }
@@ -82,12 +84,12 @@ extension UIImage {
         self.draw(in: rect)
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        let imageData = UIImageJPEGRepresentation(img!, compressionQuality)!
-        return UIImage(data: imageData)!
+        let imageData = img?.jpegData(compressionQuality: compressionQuality)
+        return UIImage(data: imageData!)!
     }
     
     func fileSize() -> Double{
-        let imageData:NSData = NSData(data: UIImagePNGRepresentation(self)!)
+        let imageData:NSData = NSData(data: self.pngData()!)
         let size = imageData.length
         let kb:Double = 1024.0
         return Double(size)/kb

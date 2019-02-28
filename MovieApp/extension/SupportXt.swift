@@ -27,24 +27,6 @@ extension Optional where Wrapped == String {
     }
 }
 
-extension Double {
-    var isNilOrZero: Bool {
-        return self == nil || self <= 0
-    }
-}
-
-extension Int{
-    var isNilOrZero: Bool{
-        return self == nil || self <= 0
-    }
-}
-
-extension CGFloat{
-    var isNilOrZero: Bool{
-        return self == nil || self <= 0
-    }
-}
-
 extension UIViewController {
 
     func setEnableViews(enable: Bool, _ views: UIView...) {

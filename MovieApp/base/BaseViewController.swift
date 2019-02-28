@@ -1,64 +1,26 @@
 //
 //  BaseViewController.swift
-//  iOS Base Project
+//  Movie App
 //
-//  Created by Lafran Pane on 1/12/18.
+//  Created by Satrio Wicaksono on 1/3/18.
 //  Copyright © 2018 Docotel Group. All rights reserved.
 //
 
 import UIKit
 
-protocol ApplicationStateDelegate {
-    func appWillForeground()
-    func appWillBackground()
-}
-
 class BaseViewController<T:PresenterCommonDelegate>: UIViewController {
     var presenter: T!
-    var stateDelegate: ApplicationStateDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    //
-    // by default, this will register an observer to listen foreground/background state
-    //
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        registerAppDelegateObserver()
     }
 
-    //
-    // by default, this will remove an observer to listen foreground/background state
-    //
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        removeAppDelegateObserver()
-    }
-
-    //
-    // register observer like appDelegate, but only notify if app in foreground/background
-    //
-    private func registerAppDelegateObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(appWillEnterForeground(_:)), name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(appWillEnterBackground(_:)), name: Notification.Name.UIApplicationWillResignActive, object: nil)
-    }
-
-    //
-    // remove observer appDelegate
-    //
-    private func removeAppDelegateObserver() {
-        NotificationCenter.default.removeObserver(self, name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
-        NotificationCenter.default.removeObserver(self, name: Notification.Name.UIApplicationWillResignActive, object: nil)
-    }
-
-    @objc private func appWillEnterForeground(_ notification: Notification) {
-        stateDelegate?.appWillForeground()
-    }
-
-    @objc private func appWillEnterBackground(_ notification: Notification) {
-        stateDelegate?.appWillBackground()
     }
 
     //
