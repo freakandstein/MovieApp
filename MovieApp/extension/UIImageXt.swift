@@ -1,33 +1,13 @@
 //
-//  ImageExt.swift
-//  Test Doang
+//  UIImageXt.swift
+//  MovieApp
 //
-//  Created by Lafran Pane on 9/15/17.
-//  Copyright © 2017 Spoonart. All rights reserved.
+//  Created by Satrio Wicaksono on 02/03/2019.
+//  Copyright © 2019 Docotel Group. All rights reserved.
 //
 
+import Foundation
 import UIKit
-
-extension UIImageView {
-    
-    func getColorFrom(point: CGPoint) -> UIColor {
-        let pixel = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: 4)
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue)
-        let context = CGContext(data: pixel, width: 1, height: 1, bitsPerComponent: 8, bytesPerRow: 4, space: colorSpace, bitmapInfo: bitmapInfo.rawValue)
-        
-        context!.translateBy(x: -point.x, y: -point.y)
-        layer.render(in: context!)
-        let color:UIColor = UIColor(red: CGFloat(pixel[0])/255.0,
-                                    green: CGFloat(pixel[1])/255.0,
-                                    blue: CGFloat(pixel[2])/255.0,
-                                    alpha: CGFloat(pixel[3])/255.0)
-        
-        pixel.deallocate()
-        return color
-    }
-    
-}
 
 extension UIImage {
     
@@ -96,3 +76,4 @@ extension UIImage {
     }
     
 }
+

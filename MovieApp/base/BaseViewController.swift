@@ -38,7 +38,7 @@ class BaseViewController<T:PresenterCommonDelegate>: UIViewController {
         let actionController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
         actionController.addAction(actionPositive)
-        actionController.present(self, animated: true)
+        self.present(actionController, animated: true, completion: nil)
     }
 
     func showConfirmationDialog(title: String?, message: String, buttons: [String], handlers: [((UIAlertAction) -> Void)?]) {
@@ -48,7 +48,7 @@ class BaseViewController<T:PresenterCommonDelegate>: UIViewController {
 
         actionController.addAction(actionPositive)
         actionController.addAction(actionNegative)
-        actionController.present(self, animated: true)
+        self.present(actionController, animated: true, completion: nil)
     }
 
     //

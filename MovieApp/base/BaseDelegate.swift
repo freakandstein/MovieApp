@@ -7,9 +7,8 @@ import UIKit
 import Foundation
 
 @objc protocol BaseDelegate {
-    @objc optional func taskDidBegin()
-    @objc optional func taskDidFinish()
-
+    func taskDidBegin()
+    func taskDidFinish()
     func taskDidError(message: String)
 }
 

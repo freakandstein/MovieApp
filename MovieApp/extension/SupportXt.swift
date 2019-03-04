@@ -26,15 +26,3 @@ extension Optional where Wrapped == String {
         }
     }
 }
-
-extension UIViewController {
-
-    func setEnableViews(enable: Bool, _ views: UIView...) {
-        views.forEach({ $0.isUserInteractionEnabled = enable })
-    }
-
-    func setHiddenViews(hidden: Bool, _ views: UIView...) {
-        views.forEach({ $0.isHidden = hidden })
-    }
-
-}

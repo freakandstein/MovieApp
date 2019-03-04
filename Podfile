@@ -9,5 +9,6 @@ target 'MovieApp' do
   pod 'IQKeyboardManagerSwift'
   pod 'Moya', '~> 11.0'
   pod 'Kingfisher'
+  pod 'SugarRecord/CoreData'
 
 end

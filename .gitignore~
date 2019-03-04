@@ -3,4 +3,4 @@
 /pod.save
 .idea
 .DS_Store
-*xcuserdata*
+*/xcuserdata*
