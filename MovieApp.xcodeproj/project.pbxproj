@@ -195,7 +195,7 @@
 				4A610662222D5A7F00B10875 /* ApiConfig.swift */,
 				4A610664222D5F2100B10875 /* ResponseParser.swift */,
 			);
-			path = network;
+			name = network;
 			sourceTree = "<group>";
 		};
 		8DE6ECB32008985700611D5C /* util */ = {
@@ -218,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = widget;
+			name = widget;
 			sourceTree = "<group>";
 		};
 		8DE6ECB62008989900611D5C /* file */ = {
