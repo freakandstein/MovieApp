@@ -48,7 +48,7 @@
 		4A610643222ADCBE00B10875 /* UIViewControllerXt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerXt.swift; sourceTree = "<group>"; };
 		4A610645222ADD2200B10875 /* UIImageXt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageXt.swift; sourceTree = "<group>"; };
 		4A610647222ADEB000B10875 /* StringXt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringXt.swift; sourceTree = "<group>"; };
-		4A61064B222C315700B10875 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = MovieApp/base/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		4A61064B222C315700B10875 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = MovieApp/network/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		4A61064F222CDBF100B10875 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4A610651222CDC3D00B10875 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		4A610653222CE57400B10875 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		4A61065B222D4A0300B10875 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		4A61065E222D4EB800B10875 /* MainApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApi.swift; sourceTree = "<group>"; };
 		4A610660222D4FD700B10875 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		4A610662222D5A7F00B10875 /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiConfig.swift; path = MovieApp/feature/main/ApiConfig.swift; sourceTree = SOURCE_ROOT; };
-		4A610664222D5F2100B10875 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseParser.swift; path = MovieApp/feature/main/ResponseParser.swift; sourceTree = SOURCE_ROOT; };
+		4A610662222D5A7F00B10875 /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiConfig.swift; path = MovieApp/network/ApiConfig.swift; sourceTree = SOURCE_ROOT; };
+		4A610664222D5F2100B10875 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseParser.swift; path = MovieApp/network/ResponseParser.swift; sourceTree = SOURCE_ROOT; };
 		4A610667222D7B9300B10875 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		5537590DE2E9194B689E9841 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8737426C87D00EB7E8B4B8A2 /* BaseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				4A610662222D5A7F00B10875 /* ApiConfig.swift */,
 				4A610664222D5F2100B10875 /* ResponseParser.swift */,
 			);
-			name = network;
+			path = network;
 			sourceTree = "<group>";
 		};
 		8DE6ECB32008985700611D5C /* util */ = {
@@ -218,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = widget;
+			path = widget;
 			sourceTree = "<group>";
 		};
 		8DE6ECB62008989900611D5C /* file */ = {
